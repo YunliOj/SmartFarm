@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insert_tex_line"
+    android:orientation="vertical">
+    <TextView
+        android:background="@color/gray_line"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:text="选择日期"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <DatePicker
+        android:theme="@android:style/Theme.Holo.Light"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:headerBackground="@color/green"
+        android:calendarTextColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </DatePicker>
+    <TextView
+        android:id="@+id/tv_compele_date_choose"
+        android:background="@color/gray_line"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:text="完成"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"></TextView>
+</LinearLayout>

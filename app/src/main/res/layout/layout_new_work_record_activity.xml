@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="工作时间" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:paddingStart="10dp"
+                android:id="@+id/ed_new_work_date"
+                android:background="@drawable/insert_tex_line"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:gravity="center_vertical"></TextView>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="场地选择" />
+
+            <Spinner
+                android:id="@+id/spinner_new_work_choose_place"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"></Spinner>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="农作物选择" />
+
+            <Spinner
+                android:id="@+id/spinner_new_work_choose_crop"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"></Spinner>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line_h" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="工作类型"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_new_work_fertilization"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:background="@mipmap/round_orange"
+                android:text="施肥" />
+
+            <Button
+                android:id="@+id/btn_new_work_spray_insecticide"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/round_orange"
+                android:text="打药" />
+
+            <Button
+                android:id="@+id/btn_new_work_watering"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@mipmap/round_orange"
+                android:text="浇灌" />
+
+            <Button
+                android:id="@+id/btn_new_work_pruning"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/round_orange"
+                android:text="除草" />
+
+            <Button
+                android:id="@+id/btn_new_work_weeding"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@mipmap/round_orange"
+                android:text="剪支" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="肥料"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/insert_tex_line"
+                    android:id="@+id/ed_new_work_fertilization"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_h" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="用量"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/insert_tex_line"
+                    android:id="@+id/de_new_work_dosage"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_h" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="残留"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/ed_new_work_residual"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/insert_tex_line"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="图片"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/btn_new_work_add_photo"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/add_pic" />
+                <include layout="@layout/layout_line_h" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/img_photo_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_del_one"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/delet_pic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/img_photo_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_del_two"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/delet_pic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/img_photo_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_del_three"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/delet_pic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/img_photo_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_del_four"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/delet_pic"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

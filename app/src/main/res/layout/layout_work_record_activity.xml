@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/work_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/place_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/crop_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/work_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/manure_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/dosage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/residual"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+    <include layout="@layout/layout_line_h"/>
+</LinearLayout>

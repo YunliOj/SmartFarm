@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/green"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/real_time_monitoring" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/air_tp"
+                    custom:monitor_icon="@mipmap/air_tp"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    ></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/soil_tp"
+                    custom:monitor_icon="@mipmap/soil_tp"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/co2"
+                    custom:monitor_icon="@mipmap/co2"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/sunshine"
+                    custom:monitor_icon="@mipmap/sunshine"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_v"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/air_humidity"
+                    custom:monitor_icon="@mipmap/air_humidity"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_hint="@string/soil_humidity"
+                    custom:monitor_icon="@mipmap/soil_humidity"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_icon="@mipmap/rainfall"
+                    custom:monitor_hint="@string/rainfall"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+                <com.fb.smartfarm.view.CustomView.MonitorItem
+                    custom:monitor_icon="@mipmap/wind"
+                    custom:monitor_hint="@string/wind"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="50dp"></com.fb.smartfarm.view.CustomView.MonitorItem>
+                <include layout="@layout/layout_line_h"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/green"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/real_time_recording" />
+            <Spinner
+                android:layout_marginStart="160dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <Button
+                android:background="@drawable/u135"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/play"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/green"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/data_statistics" />
+            <Spinner
+                android:layout_marginStart="160dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:weightSum="3">
+            <Button
+                android:text="@string/last_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:text="@string/last_weekend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:text="@string/last_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <lecho.lib.hellocharts.view.LineChartView
+            android:layout_marginTop="20dp"
+            android:background="@drawable/timg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"></lecho.lib.hellocharts.view.LineChartView>
+    </LinearLayout>
+</ScrollView>

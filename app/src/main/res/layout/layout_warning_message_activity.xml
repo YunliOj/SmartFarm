@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/warning_date"
+        android:id="@+id/tv_warning_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+
+    <include layout="@layout/layout_line_h" />
+
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/place_name"
+        android:id="@+id/tv_warning_place"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+
+    <include layout="@layout/layout_line_h" />
+
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/warning_hardware"
+        android:id="@+id/tv_warning_hardware"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+
+    <include layout="@layout/layout_line_h" />
+
+    <com.fb.smartfarm.view.CustomView.SymmetryTextView
+        custom:left_text="@string/warning_state"
+        android:id="@+id/tv_warning_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></com.fb.smartfarm.view.CustomView.SymmetryTextView>
+
+    <include layout="@layout/layout_line_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warning_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/advice"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warning_advice"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

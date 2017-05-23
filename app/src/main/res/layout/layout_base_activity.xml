@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <com.fb.smartfarm.view.CustomView.TopBar
+        android:id="@+id/base_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></com.fb.smartfarm.view.CustomView.TopBar>
+
+    <LinearLayout
+        android:id="@+id/base_content_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/insert_tex_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:paddingStart="10dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/modify_ed_txt"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            />
+        <Button
+            android:id="@+id/modify_btn_del"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/u665"
+            android:layout_width="19dp"
+            android:layout_height="19dp" />
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <resources>
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SymmetryTextView">
+        <attr name="left_text" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="MineItem">
+        <attr name="mine_left_text" format="string"></attr>
+        <attr name="mine_right_text" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="MonitorItem">
+        <attr name="monitor_icon" format="reference"></attr>
+        <attr name="monitor_hint" format="string"></attr>
+    </declare-styleable>
+</resources>
